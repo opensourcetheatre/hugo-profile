@@ -1,0 +1,126 @@
+<aside class="social">
+    <h5>{{ .Site.Params.terms.social | default "Social Links" }}</h5>
+    <div class="social-content">
+        <ul class="list-inline">
+          {{ with .Params.facebook }}
+            <li class="list-inline-item text-center">
+              <a target="_blank" rel="noopener" href="{{ . }}">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+          {{ end }}
+          {{ with .Params.twitter }}
+            <li class="list-inline-item text-center">
+              <a target="_blank" rel="noopener" href="{{ . }}">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          {{ end }}
+          {{ with .Params.linkedin }}
+            <li class="list-inline-item text-center">
+              <a target="_blank" rel="noopener" href="{{ . }}">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          {{ end }}
+          {{ with .Params.xing }}
+          <li class="list-inline-item text-center">
+              <a target="_blank" rel="noopener" href="{{ . }}">
+                <i class="fab fa-xing"></i>
+              </a>
+            </li>
+          {{ end }}
+          {{ with .Params.github }}
+            <li class="list-inline-item text-center">
+              <a target="_blank" rel="noopener" href="{{ . }}">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          {{ end }}
+          {{ with .Params.medium }}
+            <li class="list-inline-item text-center">
+              <a target="_blank" rel="noopener" href="{{ . }}">
+                <i class="fab fa-medium"></i>
+              </a>
+            </li>
+          {{ end }}
+          {{ with .Params.reddit }}
+            <li class="list-inline-item text-center">
+              <a target="_blank" rel="noopener" href="{{ . }}">
+                <i class="fab fa-reddit"></i>
+              </a>
+            </li>
+          {{ end }}
+          {{ with .Params.dribbble }}
+            <li class="list-inline-item text-center">
+              <a target="_blank" rel="noopener" href="{{ . }}">
+                <i class="fab fa-dribbble"></i>
+              </a>
+            </li>
+          {{ end }}
+          {{ with .Params.youtube }}
+            <li class="list-inline-item text-center">
+              <a target="_blank" rel="noopener" href="{{ . }}">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          {{ end }}
+          {{ with .Params.instagram }}
+            <li class="list-inline-item text-center">
+              <a target="_blank" rel="noopener" href="{{ . }}">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          {{ end }}
+          {{ with .Params.mastodon }}
+            <li class="list-inline-item text-center">
+              <a target="_blank" rel="noopener" href="{{ . }}">
+                <i class="fab fa-mastodon"></i>
+              </a>
+            </li>
+          {{ end }}
+          {{ if .Params.email }}
+            <li class="list-inline-item text-center">
+              <a target="_blank" href='mailto:{{ .Params.email }}'>
+                <i class="fa fa-envelope"></i>
+              </a>
+            </li>
+          {{ else }}
+            <li class="list-inline-item text-center">
+              <a target="_blank" href='mailto:{{ .Site.Params.contact.email }}'>
+                <i class="fa fa-envelope"></i>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      {{/*  <ul class="list-inline">
+        <li class="list-inline-item text-center">
+          <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Site.Params.hostName }}{{ .Permalink | absURL }}">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="list-inline-item text-center">
+          <a target="_blank" href="https://twitter.com/share?text={{ .Title }}&url={{ .Site.Params.hostName }}{{ .Permalink | absURL }}">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item text-center">
+          <a target="_blank" href="https://api.whatsapp.com/send?text={{ .Title }}: {{ .Site.Params.hostName }}{{ .Permalink | absURL }}">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </li>
+        <li class="list-inline-item text-center">
+          {{ if .Params.email }}
+            <a target="_blank" href='mailto:{{ .Params.email }}'>
+                <i class="fa fa-envelope"></i>
+            </a>
+          {{ else }}
+            <a target="_blank" href='mailto:{{ .Site.Params.contact.email }}'>
+                <i class="fa fa-envelope"></i>
+            </a>
+          {{ end }}
+        </li>
+      </ul>  */}}
+    </div>
+
+</aside>
